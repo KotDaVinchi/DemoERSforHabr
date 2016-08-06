@@ -1,0 +1,11 @@
+{
+	"server"           : {
+		"name": "Test ErrorCather project",
+		"port": "8020"
+	},
+	"errorReportSender": {
+		"drivers": [{
+			"console" : {}
+		}]
+	}
+}

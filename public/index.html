@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test title</title>
+    <script> app = {}</script>
+    <style>
+        p {
+            margin: 5px;
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript" src="/libs/sugar-full.js"></script>
+    <script type="text/javascript" src="/libs/eventEmitter.js"></script>
+    <script type="text/javascript" src="/libs/co.min.js"></script>
+    <script type="text/javascript" src="/tools.universal.js"></script>
+    <script type="text/javascript" src="/loader.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+<p>Error buttons:
+<button id="backend">Backend api error</button>
+<button id="frontend">Frontend error</button>
+<button id="frontendConsErr">Frontend console.error</button>
+</p>
+<p>Default error driver prints errors in server console</p>
+<p>For testing error during loading, run <code>node app.js error</code></p>
+</body>
+</html>
